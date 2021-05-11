@@ -1,0 +1,15 @@
+---
+application:
+  name: "umami"
+  project: "umami"
+  organization: "QoveryCommunity"
+databases:
+- type: "POSTGRESQL"
+  name: "umami-dy"
+  version: "11"
+routers:
+- name: "main-umami"
+  routes:
+  - application_name: "umami"
+    paths:
+    - "/*"
